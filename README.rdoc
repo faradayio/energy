@@ -1,0 +1,32 @@
+=energy
+
+Get energy use estimates for flights, rail trips, and automobile trips (more coming soon!). BETA from Brighter Planet.
+
+==BETA
+
+This is beta software and subject to change at any time.
+
+==Examples
+
+===Fuel used by a Bentley
+
+    ?> Energy::AutomobileTrip.fuel_use(:make => 'Bentley', :distance => 500)
+    => [how many litres of gas a Bentley uses to drive 500km]
+
+===Fuel used by a Continental Airlines flight
+
+    ?> Energy::Flight.fuel_use(:airline => 'Continental Airlines')
+    => [how many litres of aviation fuel a Continental Airlines flight consumes]
+
+===Fuel used by an Amtrak train
+
+    ?> Energy::RailTrip.fuel_use(:rail_class => 'intercity', :distance => 500)
+    => [how many litres of diesel an intercity uses over 500km]
+
+==TODO
+
+* always provide a conversion of, for example, fuel use in litres to energy use in joules to be true to the intent of the gem
+* decide how we expect people to use this gem (maybe it should be more like Carbon and not define its own classes)
+* hit impact.brighterplanet.com or energy.brighterplanet.com directly
+
+Copyright 2011 Brighter Planet, Inc.

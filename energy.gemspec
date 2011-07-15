@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Seamus Abshere"]
   s.email       = ["seamus@abshere.net"]
   s.homepage    = "https://github.com/brighterplanet/energy"
-  s.summary     = %q{Energy information client from Brighter Planet}
-  s.description = %q{Energy information client from Brighter Planet}
+  s.summary     = %q{Get energy use estimates for flights, rail trips, and automobile trips (more coming soon!). BETA from Brighter Planet.}
+  s.description = %q{Get energy use estimates for flights, rail trips, and automobile trips (more coming soon!). BETA from Brighter Planet.}
 
   s.rubyforge_project = "energy"
 
@@ -21,4 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'test-unit'
   s.add_development_dependency 'rake'
   s.add_runtime_dependency 'activesupport'
+  s.add_runtime_dependency 'carbon', '>=1.1.2'
 end
